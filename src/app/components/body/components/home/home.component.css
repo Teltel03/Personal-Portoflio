@@ -16,16 +16,18 @@
     /* border: 2px solid; */
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     max-width: 100%;
     max-height: 100%;
+    flex: 40%;
 }
 
 img {
     max-width: 70%;
     max-height: 70%;
     object-fit: contain;
+    background-color: #8478bb;
     border: 5px solid #161B33;
     border-radius: 50px;
     animation:  LtoR 2s;
@@ -33,6 +35,7 @@ img {
 
 
 .description {
+    flex: 50%;
     /* border: 2px solid; */
     max-width: 100%;
     max-height: 100%;
@@ -79,6 +82,10 @@ img {
     .des{
         font-size: 22px;
     }
+
+    .imgcontainer{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 589px){
@@ -105,6 +112,9 @@ img {
 
     .des{
         font-size: 18px;
+    }
+    .imgcontainer{
+        justify-content: center;
     }
 }
     

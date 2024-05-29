@@ -112,6 +112,8 @@ li a {
     width: 100%;
     border-top: #161B33 2px solid;
     gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 /* .skills, .strength, .weakness{
@@ -216,6 +218,8 @@ li a {
     img{
         object-fit: cover;
     }
+
+
 } 
 
 @media (max-width: 1024px) and (min-width: 344px){
