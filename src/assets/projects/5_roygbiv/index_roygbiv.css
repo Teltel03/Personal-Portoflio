@@ -1,0 +1,40 @@
+body { 
+        background-color: red;
+}
+@media (max-width: 907px) { 
+    body { 
+        background-color: orange;
+        } 
+}
+@media (max-width: 756px) { 
+    body { 
+        background-color: yellow;
+        } 
+}
+@media (max-width: 605px) { 
+    body { 
+        background-color: green;
+        } 
+}
+@media (max-width: 454px) { 
+    body { 
+        background-color: blue;
+        } 
+}
+@media (max-width: 303px) { 
+    body { 
+        background-color: indigo;
+        } 
+}
+@media (max-width: 151px) { 
+    body { 
+        background-color: violet;
+        } 
+}
+.main{
+    column-count: 7;
+    column-gap: 35px;
+    font-size: 30px;
+    font-weight: bolder;
+
+}

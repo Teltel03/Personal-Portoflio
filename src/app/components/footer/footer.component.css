@@ -1,0 +1,35 @@
+*{
+    height: max-content;
+}
+.socials{
+    background: #BAB6CE;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.social-icons {
+    display: flex;
+    gap: 150px;
+    padding: 10px;
+}
+  
+.social-icons a {
+    color: white;
+    font-size: 25px;
+}
+  
+/* .social-icons a:hover {
+    color: blue;
+} */
+
+@media (max-width: 800px){
+    .social-icons{
+        gap: 50px;
+    }
+}

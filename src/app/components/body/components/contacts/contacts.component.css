@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 330px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.message{
+    padding: 10px;
+    flex: 40%;
+    /* border: 2px solid; */
+    background-image: linear-gradient(to top, #9c88f4, #828ee8, #7291d8, #6d92c4, #7190af);
+    border-radius: 50px;
+    border: #161B33 5px solid;
+}
+
+h2{
+    justify-content: center;
+    margin-left: 10%;
+    font-size: 36px;
+    color: rgb(248, 248, 248);
+}
+
+.social{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 10%;
+    animation: Pop 1s;
+}
+.social a{
+    line-height: 100px;
+    color: #161B33;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social .space{
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column-reverse;
+        margin: 60px;
+    }
+}
+
+@media (max-width: 791px){
+    .social a{
+        font-size: 24px;
+    }
+
+    .social .space{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 530px) and (min-width: 320px){
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .social{
+        margin-left: 0;
+    }
+
+    .social .space{
+        margin-left: 10px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    .social a{
+        font-size: 20px;
+    }
+}
+
+/* @media (max-width: 372px) and (min-width: 320px){
+    h2{
+        font-size: 26px;
+    }
+
+    .social a{
+        font-size: 20px;
+    }
+} */
+
+/* CRUD */
+
+.CRUD{
+    flex: 60%;
+    background-image: linear-gradient(to bottom, #9c88f4, #828ee8, #7291d8, #6d92c4, #7190af);
+    border-radius: 50px;
+    padding: 20px;
+    max-height: 600px;
+    
+    /* overflow: hidden; */
+}
+
+.CRUD h2{
+    margin-left: 1%;
+}
+
+.outer-container{
+    padding-top: 10px;
+    padding: 0px;
+    max-height: 400px;
+    overflow: auto;
+    /* border: 2px solid #161B33; */
+}
+
+.input-add{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+input{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid #161B33;
+}
+
+.newTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* color: grey; */
+}
+
+.newTask:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #161B33 ;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.removeallcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.removeallcont button{
+    background-color: #161B33;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.removeallcont button:hover{
+    background-color: white;
+    color: #161B33;
+    cursor: pointer;
+}
+
+.notes-card{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: 5px 0px;
+    height: max-content;
+    width: 100%;
+    gap: 5px ;
+    animation: Pop 2s;
+}
+
+.notes-card p{
+    line-height: 30px;
+    text-align: justify;
+    width: 100%;
+    color: #161B33;
+    /* margin-right: 50px; */
+}
+
+.notes-card button{
+    background-color: white;
+    color: #161B33;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #161B33;
+    padding: 2px;
+    align-items: end;
+    
+}
+
+.notes-card button:hover{
+    cursor: pointer;
+    background-color: #161B33;
+    color: white;
+}
+
+.allnotes{
+    display: flex;
+    flex-direction: column-reverse;  
+}
+
+.cR{
+    width: 100%;
+    background: #BAB6CE;
+    padding: 16px 0px;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{
+    width: 1px;
+}
+
+/* ::-webkit-scrollbar-track{
+    background-image: linear-gradient(to bottom, #9c88f4, #828ee8, #7291d8, #6d92c4, #7190af);
+    background: blue;
+} */
+
+
+
+

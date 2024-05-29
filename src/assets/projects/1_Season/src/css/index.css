@@ -1,0 +1,88 @@
+#themes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#message {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 5%;
+    width: 50%;
+    border: 5px dashed rgb(163, 19, 43);
+    border-radius: 25px;
+    padding: 2%;
+    color: rgb(228, 133, 133);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#input-text {
+    margin: 20px 0;
+    font-size: 30px;
+    width: 20%; 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+#btn-theme {
+    width: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-top: 1%;
+    font-size: 20px;
+    text-align: center;
+    color: coral;
+}
+
+h4 {
+    font-size: 20px;
+    color: rgb(75, 63, 63);
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    margin-top: 5%;
+}
+
+#winter {
+    background-image: url("../images/textBG/winter_text.jpg");
+    background-size: cover;
+    color: #654E92;
+}
+
+#summer {
+    background-image: url("../images/textBG/summer_text.jpg");
+    background-size: cover;
+    color: #C58940;
+}
+
+#autumn {
+    background-image: url("../images/textBG/autumn_text.jpg");
+    background-size: cover;
+    color: #394867;
+}
+
+#spring {
+    background-image: url("../images/textBG/spring_text.jpg");
+    background-size: cover;
+    color: #2A2F4F;
+}
+
+#default {
+    background-color: #7e98ce;
+    color: white;
+}

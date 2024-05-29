@@ -1,0 +1,55 @@
+<div class="contacts">
+    <div class="container">
+
+       <div class="message">
+        <h2>Get in touch!</h2>
+        <div class="social">
+          <div class="fb">
+            <a href="https://www.facebook.com/teltelgebe/">❥ <i class="fab fa-facebook-f"></i></a>
+            <a class="space" href="https://www.facebook.com/teltelgebe/">Tel Tel Gebe</a>
+          </div>
+          <div class="ig">
+            <a href="https://www.instagram.com/teltelgebe/" target="_blank">❥ <i class="fab fa-instagram"></i></a>
+            <a class="space" href="https://www.instagram.com/teltelgebe/">Tel Tel Gebe</a>
+          </div>
+          <div class="gmail">
+            <a href="mailto:crystelannlgebe@gmail.com" target="_blank">❥ <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="space" href="mailto:crystelannlgebe@gmail.com">crystelannlgebe&#64;gmail.com</a>
+          </div>
+          <div class="contact"> 
+            <a href="">❥ <i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a class="space" href="">0930-527-9318</a>
+          </div>
+          <div class="cv">
+            <a href="https://drive.google.com/file/d/1GaPsO8txj-lWJ4rW4mdC9oTcNMVu1WLe/view?usp=drive_link">❥ <i class="fa fa-download" aria-hidden="true"></i></a>
+            <a class="space" href="https://drive.google.com/file/d/1C6xu-E4L-aSxQQYqqsRmWt_H3kgHfpNf/view?usp=sharing">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="CRUD">
+        <h2>Want to say something to me?</h2>
+        <div class="input-add">
+          <input [(ngModel)]="newTaskContent" type="text" placeholder="Leave me a note">
+          <button (click)="newtask(newTaskContent)" class="newTask">+</button>
+        </div>
+        <div class="outer-container">
+          <div class="allnotes">
+            <div class="notes-card" *ngFor="let item of tasks">
+              <p *ngIf="!item.isEditing">{{item.title}}</p>
+              <input *ngIf="item.isEditing" [(ngModel)]="item.title" />
+              <button *ngIf="!item.isEditing" (click)="editTask(item)"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button *ngIf="item.isEditing" (click)="updateTask(item)"><i class="fa fa-check" aria-hidden="true"></i></button>
+              <button (click)="removetask(item.id)"><i class="fa fa-trash" aria-hidden="true"></i></button> 
+            </div>
+          </div>
+          <div class="removeallcont" *ngIf="tasks.length >= 1">
+            <button (click)="removealltasks()"><i class="fa fa-trash" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cR">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2023 - 2024 Internship | Gebe, Crystel Ann L.</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle</title>
+  <link rel="stylesheet" type="text/css" href="src/style/styles.css"/>
+</head> 
+
+<body>
+
+  
+  <header id="upper">
+
+    
+    <div id="timer"></div>
+    <h1>Wordle</h1>
+    <div id="button-section">
+      <button id="resetButton"><span>↻</span></button>
+      <button id="toggleButton" onclick="toggleMode()">☼</button>
+    </div>
+  </header>
+
+  
+  <div id="attempts">
+    Remaining Attempts: <span id="remainingAttempts"></span>
+ </div>
+
+  <main id="middle">
+    <div></div>
+    <div id="board"></div>
+    <div></div>
+  </main>
+  
+  <div class="toaster">
+    <ul></ul>
+  </div>
+
+  <footer>
+    <section id="keyboard"></section>
+  </footer>
+  <script type="text/javascript" src="src/scripts/wordle_words.js"></script>
+  <script type="text/javascript" src="src/scripts/index.js"></script>
+</body>
+</html>

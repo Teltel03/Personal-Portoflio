@@ -1,0 +1,151 @@
+.head {
+    position: fixed !important;
+    background: #161B33;
+    height: max-content;
+    position: fixed;
+    width: 100%;
+    margin-top: -5px;
+    z-index: 2;
+    display: flex;
+    color: white;
+    padding: 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center; 
+    margin: 1px; 
+    width: 500vh;
+}
+
+p {
+    margin-top: 5px;
+    text-align: right;
+    margin-left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.right{
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#checkbtn {
+    font-size: 30px;
+    color: white;
+    margin-left: 3%;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ ul {
+    display: inline-flex;
+    left: -1%;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.right ul a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+} 
+
+.sidenav ul li.active, .sidenav ul li:hover {
+    background: #FFF5EB;
+    transition: all 0.5s ease-out 0s;
+}
+
+.sidenav ul li a.active, .sidenav ul li a:hover {
+    color: #161B33; 
+}
+@media (max-width: 866px){
+    .head{ 
+        position: fixed !important; 
+        width: 98%;
+
+    }
+    #checkbtn {
+        display: block;
+    }
+
+    .sidenav ul{
+        border-top:#161B33 5px solid;
+        width: 100%;
+        height: 100vh;
+        background: #BAB6CE;
+        position: fixed;
+        top: 50px;
+        left: -200%;
+        transition: .5s; 
+        flex-direction: column;
+    }
+
+    .sidenav ul li{
+        display: block;
+        text-align: left;
+        line-height: 100px;
+        margin-left: -10%;
+        margin-right: 50px;
+        border-bottom: 1px solid black;
+        padding-left: 10%;
+    }   
+}
+
+/* @media (max-width: 1024px) and (min-width: 568px){
+    .right{
+        display: inline-block;
+    }
+    .right ul a {
+        padding: 20px;
+    }
+} */
+
+/* @media  (max-width: 609px) and (min-width: 300px) {
+    .right{
+        flex-direction: row;
+    }
+    .head{ */
+        /* position: fixed !important; */
+        /* width: 98%;
+
+    }
+    #checkbtn {
+        display: block;
+    }
+
+    .sidenav ul{
+        border-top:#161B33 5px solid;
+        width: 100%;
+        height: 100vh;
+        background: #BAB6CE;
+        position: fixed;
+        top: 50px;
+        left: -200%;
+        transition: .5s; 
+    }
+
+    .sidenav ul li{
+        display: block;
+        text-align: left;
+        line-height: 100px;
+        margin-left: -10%;
+        margin-right: 50px;
+        border-bottom: 1px solid black;
+        padding-left: 5%;
+    }   
+}
+ */

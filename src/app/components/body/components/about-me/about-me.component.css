@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+ 
+.about {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    overflow: hidden;
+}  
+
+.nav {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    color: #161B33;
+    padding: 10px;
+}
+ 
+.learn {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    animation: LtoR 2s;
+    color: #161B33;
+    /* text-decoration: underline; */
+}
+
+.cons{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    /* border: #161B33 2px solid; */
+}
+
+.fcontainer{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100%;
+    flex: 30%;
+    animation: LtoR 2s;
+}
+
+.first {
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid #161B33; 
+    border-radius: 15px;
+    box-shadow: 5px 12px 15px rgba(30, 30, 200, 0.3); 
+    width: 50%; 
+    margin: 50px auto; 
+    height: 80%;
+}
+
+.wrapper {
+    display: flex; 
+    width: 100%;
+    animation: slider 6s;
+    animation-delay: 1s;
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto;/* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* gap: 20px; */
+    /* margin-bottom: 10%; */
+    flex: 70%;
+    margin-top: 5%;
+    border: #161B33 2px solid;
+    background-image: linear-gradient(to top, #233343, #414e63, #626a83, #8688a5, #aca6c7);
+    height: max-content;
+    color: rgb(248, 248, 248);
+    animation: RtoL 1.5s;
+}
+
+.second {
+    font-size: 24px;
+    /* background-color: dodgerblue; */
+    padding: 10px;
+    flex: 35%;
+}
+
+.third {
+    /* background-color: pink; */
+    padding: 10px;
+    flex: 35%;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    line-height: 60px;
+}
+
+li a {
+    font-weight: bold;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: #161B33 2px solid;
+    gap: 10px;
+}
+
+/* .skills, .strength, .weakness{
+    animation: Up 2s;
+} */
+.info h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info ul li{
+    font-size: 22px;
+    list-style: circle; 
+    margin-left: 80px;
+    padding: 10px;
+}
+
+.info img{
+    width: 50%;
+    margin: 30% 25%;
+    animation: fade-in 2s;
+    
+}
+
+.box{
+    border: #161B33 5px solid;
+    border-radius: 100px;
+    animation: Up 2s;
+    color: rgb(248, 248, 248);
+    background-image: linear-gradient(to top, #233343, #414e63, #626a83, #8688a5, #aca6c7);
+}
+
+.skills{
+    margin-top: 10px;
+    flex: 100%;  
+}
+.strength{
+    margin-top: 10px;
+    flex: 100%;
+}
+
+.weakness{
+    margin-top: 10px;
+    flex: 100%;
+}
+
+.app{
+    margin-top: 10px;
+    margin-bottom:50px;
+    border-top: #161B33 2px solid;
+}
+.app h2{
+    margin-top: 10px;
+    text-align: center;
+    color: #161B33;
+}
+.apps {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); 
+    grid-template-rows: minmax(5rem, auto);
+    padding: 1%;
+    gap: 5px;
+    animation: Pop linear;
+    animation-timeline: contain();
+    animation-range-end: 10px;
+}
+
+.html, .css, .unity, .aseprite, .ms, .camtasia, .filmora, .canva, .powtoon{
+    flex: 100%;
+    /* border: 2px solid ; */
+}
+
+.apps p{
+    font-size: 22px;
+    text-align: center;
+    color: #161B33;
+}
+.apps img{
+    width: 25%; 
+    height: 65%;
+    margin-left: 38%;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+
+/* make animation with computer literate */
+
+@media (max-width: 2000px) and (min-width: 1024px){
+    .learn{
+        font-size: 32px;
+    }
+    li{
+        font-size: 22px;
+    }
+    li a {
+        font-size: 22px;
+    }
+    .first{
+        width: 80%;
+        height: 75%;
+    }
+    img{
+        object-fit: cover;
+    }
+} 
+
+@media (max-width: 1024px) and (min-width: 344px){
+    .cons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 30px;
+    }
+    .learn {
+        font-size: 24px;
+    }
+    .container {
+        flex-direction: column;
+        gap: 0;
+        /* margin-bottom: 20%; */
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .first{
+       width: 60%;
+    }
+
+    .info{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .info ul li{
+        font-size: 20px;
+    }
+
+    .info img{
+        width: 20%;
+        margin: 0 40%;
+    }
+
+    .apps {
+        flex-direction: column;
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 1790px) and (min-width: 1024px) { 
+    .info img{
+        display: none;
+    }
+}
