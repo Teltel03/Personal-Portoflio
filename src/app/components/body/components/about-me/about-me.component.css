@@ -58,7 +58,7 @@
 .wrapper {
     display: flex; 
     width: 100%;
-    animation: slider 6s;
+    animation: slider 10s;
     animation-delay: 1s;
 }
 
