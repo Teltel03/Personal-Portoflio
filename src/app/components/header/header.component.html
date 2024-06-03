@@ -9,10 +9,10 @@
         <nav class="sidenav">
             <input type="checkbox" id="check">
             <ul>  
-                <li routerLink="/home" (click)="hideSidenav()"><a>Home</a></li>
-                <li routerLink="/aboutme" (click)="hideSidenav()"><a>About</a></li>
-                <li routerLink="/past" (click)="hideSidenav()"><a>Projects</a></li>
-                <li routerLink="/contacts" (click)="hideSidenav()"><a>Contacts</a></li> 
+                <li routerLink="/home" (click)="hideSidenav()" [class.active]="isActiveRoute('/home')"><a>Home</a></li>
+                <li routerLink="/aboutme" (click)="hideSidenav()" [class.active]="isActiveRoute('/aboutme')"><a>About</a></li>
+                <li routerLink="/past" (click)="hideSidenav()" [class.active]="isActiveRoute('/past')"><a>Projects</a></li>
+                <li routerLink="/contacts" (click)="hideSidenav()" [class.active]="isActiveRoute('/contacts')"><a>Contacts</a></li> 
             </ul>
         </nav>
     </aside>    
