@@ -111,14 +111,8 @@ li a {
     flex-direction: row;
     width: 100%;
     border-top: #161B33 2px solid;
-    gap: 10px;
-    /* justify-content: center;
-    align-items: center; */
 }
 
-/* .skills, .strength, .weakness{
-    animation: Up 2s;
-} */
 .info h2{
     text-align: center;
     margin-top: 10px;
@@ -132,13 +126,15 @@ li a {
 }
 
 .info img{
-    width: 50%;
-    margin: 30% 25%;
+    width: 52%;
+    height: 40%;
     animation: fade-in 2s;
-    
+    margin: 30% 25%;
 }
 
 .box{
+    width: 100%;
+    height: 100%;
     border: #161B33 5px solid;
     border-radius: 100px;
     animation: Up 2s;
@@ -146,18 +142,13 @@ li a {
     background-image: linear-gradient(to top, #233343, #414e63, #626a83, #8688a5, #aca6c7);
 }
 
-.skills{
-    margin-top: 10px;
-    flex: 100%;  
-}
-.strength{
+.skills, .strength, .weakness{
     margin-top: 10px;
     flex: 100%;
 }
 
-.weakness{
-    margin-top: 10px;
-    flex: 100%;
+.skill, .strengths, .weak{
+    width: 100%;
 }
 
 .app{
@@ -198,6 +189,12 @@ li a {
     margin-right: 50%;
     margin-top: 5%;
 }
+
+.skill, .strengths, .weak{
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* make animation with computer literate */
 
@@ -268,10 +265,27 @@ li a {
         row-gap: 50px;
         grid-template-columns: repeat(2, 1fr); 
     }
+
+    .skill, .strengths, .weak{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1790px) and (min-width: 1024px) { 
     .info img{
-        display: none;
+        width: 20%;
+        margin: 0 40%;
+    }
+    .info{
+        gap: 10px;
+    }
+
+    .skill, .strengths, .weak{
+        flex-direction: column;
+        flex: 50%;
+        height: 50%;
+    }
+    .box{
+        height: 100%;
     }
 }
